@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="たった一言を、取り返しのつかない敬語へ。留学生のための15段階敬語変換機。">
+  <title>超・敬語メーカー for 留学生</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><a class="brand" href="./">超・敬語メーカー<span>for 留学生</span></a><span class="stamp">過剰品質保証</span></header>
+<main>
+  <section class="hero"><p class="eyebrow">KEIGO OVERDOSE LABORATORY</p><h1>その一言、<br><em>重く</em>しすぎませんか？</h1><p>「カレーが辛い」が、国家予算の審議みたいになる。<br>日本語の心配りを、物理的限界まで搭載しました。</p></section>
+  <section class="machine" aria-label="敬語変換機">
+    <div class="labelrow"><label for="input">01 / ふつうの日本語</label><span id="count">7文字</span></div>
+    <textarea id="input" maxlength="100" rows="3">カレーが辛い</textarea>
+    <div class="presets" aria-label="入力例"><button data-text="カレーが辛い">カレーが辛い</button><button data-text="宿題を忘れた">宿題を忘れた</button><button data-text="もう帰りたい">もう帰りたい</button><button data-text="この料理はおいしい">この料理はおいしい</button></div>
+    <div class="levelhead"><label for="level">02 / 敬語の重さ</label><output id="levelOut" for="level">15</output></div>
+    <input type="range" id="level" min="1" max="15" value="15" aria-describedby="levelName">
+    <div class="ticks"><span>友人</span><span>目上</span><span>皇室</span><span>概念</span></div>
+    <div id="levelName" class="levelname" aria-live="polite"></div>
+    <div class="labelrow"><span>03 / 変換結果</span><span class="risk">社会的危険度 <b id="risk">■■■■■</b></span></div>
+    <div class="resultwrap"><p id="result" aria-live="polite"></p><div class="seal">敬</div></div>
+    <div class="actions"><button id="convert" class="primary">再び、敬語にする</button><button id="copy">結果をコピー</button></div>
+    <p id="toast" role="status"></p>
+  </section>
+  <section class="explain"><h2>敬語は、謙れば謙るほど<br>相手に重い。</h2><div class="cards"><article><b>15</b><h3>十五段活用</h3><p>友達への一報から、時空の歪みまで。全15種のテンプレートを本気で搭載。</p></article><article><b>0</b><h3>外部送信ゼロ</h3><p>入力はブラウザ内だけで処理。あなたの不徳の致すところを誰にも送信しません。</p></article><article><b>∞</b><h3>謝罪の可能性</h3><p>褒めることも謝罪に変えられる、留学生のための過剰日本語インフラです。</p></article></div></section>
+  <details><summary>使い方と、使用上の注意</summary><p>文章を入力してスライダーを動かしてください。敬語は文法を学ぶものではなく、場の空気に耐えるものです。本ツールはジョークです。本当の目上の人には、せいぜいレベル4くらいにしておきましょう。</p></details>
+</main>
+<footer><p>ロリポップ！デプロイナウコンテスト応募作品</p><p>生成AI（OpenClaw/K3.1 Pro）と共同制作 / 敬語による人的被害は負いかねます</p></footer>
+<script src="app.js"></script>
+</body></html>
